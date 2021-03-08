@@ -56,7 +56,9 @@
     "multiple-cucumber-html-reporter": "^1.16.2",
     "start-server-and-test": "1.10.6",
     "typescript": "3.7.4",
-    "yaml-lint": "1.2.4"
+    "yaml-lint": "1.2.4",
+	"cypress-tags": "0.0.20"
+
   },
   "husky": {
     "hooks": {
