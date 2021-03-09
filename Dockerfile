@@ -5,4 +5,4 @@ COPY . /app
 RUN npm install --save-dev cypress
 RUN npm install
 RUN $(npm bin)/cypress verify
-CMD ["npm","run","cucumber"]
+CMD ["/bin/sh", "entrypoint.sh"]
