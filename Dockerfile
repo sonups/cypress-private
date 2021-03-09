@@ -5,4 +5,4 @@ COPY . /app
 RUN npm install --save-dev cypress
 RUN npm install
 RUN $(npm bin)/cypress verify
-CMD ["node_modules\.bin\cypress-tags", "run"]
+CMD ["bash"]
