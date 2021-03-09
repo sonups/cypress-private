@@ -3,5 +3,6 @@ RUN mkdir /app
 WORKDIR /app
 COPY . /app
 RUN npm install --save-dev cypress
+RUN npm install
 RUN $(npm bin)/cypress verify
-CMD ["cypress", "--profile", "all-tags"]
+CMD ["node_modules\.bin\cypress-tags", "run"]
