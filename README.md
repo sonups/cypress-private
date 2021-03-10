@@ -29,8 +29,6 @@
 
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
@@ -41,7 +39,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
         <ul>
-        <li><a href="#optional-to-check-other-features">[Optional] To check other features</a></li>
+        <li><a href="#optional-to-check-other-project-features">[Optional] To check other project features</a></li>
       </ul>
       
     </li>
@@ -76,7 +74,7 @@ Other useful feautes are:-
 Only docker required for running the tests
 * [Docker](https://www.docker.com/)
 
-### (Optional) To check other features
+### [Optional] To check other project features
 Node and npm to be installed in host machine
 
 * [NPM](https://www.npmjs.com/)
