@@ -37,7 +37,7 @@
             <li><a href="#built-with">Built With</a></li>
          </ul>
          <ul>
-            <li><a href="#optional-to-check-other-project-features">Optional To check other project features</a></li>
+            <li><a href="#optional-to-check-other-project-features">[Optional] To check other project features</a></li>
          </ul>
       </li>
       <li>
