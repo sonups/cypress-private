@@ -41,15 +41,15 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
         <ul>
-        <li><a href="#[optional]-to-check-other-features">[Optional] To check other features</a></li>
+        <li><a href="#optional-to-check-other-features">[Optional] To check other features</a></li>
       </ul>
       
     </li>
   <li>
-      <a href="#getting-started">Steps In a nutshell</a>
+      <a href="#steps-in-a-nutshell">Steps In a nutshell</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#Installation & Execution">Installation & Execution</a></li>
+        <li><a href="#installation--execution">Installation & Execution</a></li>
       </ul>
     </li>
     <li><a href="#contact">Contact</a></li>
