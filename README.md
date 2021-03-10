@@ -25,7 +25,7 @@
   </a>
   <h3 align="center">Cypress Test Automation</h3>
   <p align="center">
-    Cypress test automation using docker. Run all your End to end tests silently 
+    Cypress test automation using docker. Run all your UI End to end tests silently 
 
 </p>
 
@@ -39,7 +39,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
         <ul>
-        <li><a href="#optional-to-check-other-project-features">[Optional] To check other project features</a></li>
+        <li><a href="#optional-to-check-other-project-features">Optional To check other project features</a></li>
       </ul>
       
     </li>
