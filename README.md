@@ -1,61 +1,133 @@
-# Cypress with Cucumber BDD and AWS Amplify Console - CI/CD Pipeline
-
-# Dependencies:
-1. npm install
-2. npm link
-3. npm link cypress-cucumber-preprocessor
-
-# Set host/ baseurl
-1. go to cypress.json file
-2. set baseurl
-
-# Folder structure
-![Screenshot](cypress/screenshots/structure.png?raw=true "FolderStructure")
-
-# Dashboard execution[Test runner]:
-1. Go to project root, 
-2. npx cypress open
-3. click specific feature file [executionwillstart]
-
-# Cmmd line execution using npm scripts:
-# mochawesome report execution
-1. npm run test:mochawesomereport
-
-# allure report execution
-1. npm run test:allurereport
-2. npm run report
-
-# Cucumber-HTML report execution
-1. npm run test:htmlreport
-2. node ./index.js
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
 
-# Visual Test: 
-We can cover visual testing with cypress using `cypress-image-snapshot` node_module
-1. npm run test:visual-base
-2. npm run test:visual-actual
-3. Snapshots will be generated in 'snapshots' folder
 
-# Reports:
-1. Reports will be generated in 'mochawesomereport-report' folder - command line execution only
-  
-   ex: npm run test:mochawesomereport
-
-2. Allure reports: 
-    a. npm run test:allurereport
-    b. npm run report
-    
-
-# Reference
-- [Detailed Article](https://medium.com/@vinayaktitti/getting-started-with-cypress-and-cucumber-api-2d7057e34047)
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 
 
-# Allure Reports:
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+  <h3 align="center">Cypress Test Automation</h3>
+  <p align="center">
+    Cypress test automation using docker. Run all your End to end tests silently 
 
-![Screenshot](cypress/screenshots/allure.png?raw=true "Allure")
+</p>
 
-# Cucumber HTML Reports:
 
-![Screenshot](cypress/screenshots/html1.png?raw=true "Cucumber HTML")
-![Screenshot](cypress/screenshots/html2.png?raw=true "Cucumber HTML")
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+  <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+
+An End to end test automation framework with Cypress. You can build the project using docker. It has some useful reporting features.
+
+Please have a look at other useful scripts inside  **package.json**
+ - Allure report generation
+ - Running tests in chrome, firefox 
+ - Cypress Test Runner [ Useful for test script development]
+ - Execute specific tests by tags 
+
+### Built With
+
+Only docker required for running the tests
+* [Docker](https://www.docker.com/)
+
+### Optional (To check other features)
+Node and npm to be installed in host machine
+
+* [NPM](https://www.npmjs.com/)
+* [Node Js](https://nodejs.org/en/)
+
+
+
+
+<!-- GETTING STARTED -->
+## Steps In a nutshell
+
+1. Install docker 
+2. Run build scripts 
+3. Run execute scripts to spin up docker image
+4. Run copy scripts to extracts results from docker container
+
+### Prerequisites
+
+* docker in ubuntu 
+  ```
+  Follow the steps at https://docs.docker.com/engine/install/ubuntu/
+  ```
+
+* docker in windows  
+  ```
+  Follow the steps at https://docs.docker.com/docker-for-windows/install/
+  ```
+
+### Installation & Execution
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/sonups/cypress-test-docker
+   ```
+2. Cd into the folder 'cypress-test-docker'
+   ```sh
+   cd cypress-test-docker
+   ```
+3. Build the docker image using script:
+   ```sh
+   sh build.sh
+   ```
+4. Start test execution using script:
+   ```sh
+   sh run-test.sh
+   ```   
+5. Extract results from container:
+   ```sh
+   sh extract-results.sh
+   ```   
+   
+
+<!-- CONTACT -->
+## Contact
+
+Sonu Sadasivan - [@your_twitter](https://twitter.com/your_username) - sonu.sadasivan@gmail.com.com
+
+Project Link: [https://github.com/sonups/cypress-test-docker](https://github.com/sonups/cypress-test-docker)
 
