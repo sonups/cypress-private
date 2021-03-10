@@ -132,7 +132,7 @@ Node and npm to be installed in host machine
 <!-- CONTACT -->
 ## Contact
 
-Sonu Sadasivan - [@your_twitter](https://twitter.com/your_username) - sonu.sadasivan@gmail.com.com
+Sonu Sadasivan - sonu.sadasivan@gmail.com.com
 
 Project Link: [https://github.com/sonups/cypress-test-docker](https://github.com/sonups/cypress-test-docker)
 
