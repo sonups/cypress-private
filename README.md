@@ -41,15 +41,15 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
         <ul>
-        <li><a href="#[Optional] To check other features">Built With</a></li>
+        <li><a href="#[Optional] To check other features">[Optional] To check other features</a></li>
       </ul>
       
     </li>
   <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">Steps In a nutshell</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#Installation & Execution">Installation & Execution</a></li>
       </ul>
     </li>
     <li><a href="#contact">Contact</a></li>
@@ -76,7 +76,7 @@ Other useful feautes are:-
 Only docker required for running the tests
 * [Docker](https://www.docker.com/)
 
-### [Optional] To check other features
+### (Optional) To check other features
 Node and npm to be installed in host machine
 
 * [NPM](https://www.npmjs.com/)
