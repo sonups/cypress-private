@@ -1,6 +1,5 @@
 import { rightSidePanelObjects } from '../../pageobjects/right_sidepanelobjects'
-import { chartsObjects } from '../../pageobjects/charts_pageobjects'
-import {Given, When, Then} from "cypress-cucumber-preprocessor/steps"
+import { Then } from 'cypress-cucumber-preprocessor/steps'
 
 
 Then('The right side panel contains You Have Seen Label', () => {

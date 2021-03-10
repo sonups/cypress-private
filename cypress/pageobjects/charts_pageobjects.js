@@ -1,4 +1,4 @@
-import { selectDropdownValue, verifydescendingOrderOfMovieRating} from '../utils/helper'
+import { selectDropdownValue, verifydescendingOrderOfMovieRating } from '../utils/helper'
 
 const movieTitle = '.lister>table>tbody>tr>td.titleColumn'
 const movieItems = '.lister>table>tbody>tr'
@@ -7,31 +7,30 @@ const iMDBChartsLabel = '.seen-collection>div>h3'
 const topRatedMoviesLabel = '.seen-collection>div>h1'
 const topRatedByUsersLabel = '.seen-collection>div>.byline'
 const dropdownSortBYIMDBRating = 'select.lister-sort-by'
-const dropdownSortBy = '.lister-sort-by'
-const link_title = '.lister-list a:nth-child(1)'
 const movieRatingIdentifier = 'td.ratingColumn.imdbRating'
 
 export const chartsObjects = {
-  verifyMovieTitlesDisplayedInNumericalOrder() {
+  verifyMovieTitlesDisplayedInNumericalOrder () {
     cy.get(movieTitle)
-    .each(($el, index, $list) => {
+    .each(($el, index) => {
       let itemNumber = index + 1
-      expect($el).to.contain(itemNumber+".")
+
+      expect($el).to.contain(`${itemNumber}.`)
 
     })
     .then(($lis) => {
       expect($lis).to.have.length(250) // true
     })
   },
-  verify250MoviesDisplayedinCharts() {
+  verify250MoviesDisplayedinCharts () {
     cy.get(movieItems)
-    .each(($el, index, $list) => {
+    .each(() => {
     })
     .then(($lis) => {
       expect($lis).to.have.length(250) // true
     })
   },
-  verifyCentreImageRenderedCorrectly() {
+  verifyCentreImageRenderedCorrectly () {
     cy.get(centreImage)
     .should('be.visible')
     .and(($img) => {
@@ -40,35 +39,26 @@ export const chartsObjects = {
       expect($img[0].naturalHeight).to.be.greaterThan(0)
     })
   },
-  verifyHeaderLabelTopRatedMovies(expectedText) {
-      cy.get(topRatedMoviesLabel)
+  verifyHeaderLabelTopRatedMovies (expectedText) {
+    cy.get(topRatedMoviesLabel)
       .should('be.visible')
-      .should('contain',expectedText)
-    },
-    verifyHeaderLabelIMDBCharts(expectedText) {
-      cy.get(iMDBChartsLabel)
+      .should('contain', expectedText)
+  },
+  verifyHeaderLabelIMDBCharts (expectedText) {
+    cy.get(iMDBChartsLabel)
       .should('be.visible')
-      .should('contain',expectedText)
-    },
-    verifyHeaderLabelTopRatedByUsersLabel(expectedText) {
-      cy.get(topRatedByUsersLabel)
+      .should('contain', expectedText)
+  },
+  verifyHeaderLabelTopRatedByUsersLabel (expectedText) {
+    cy.get(topRatedByUsersLabel)
       .should('be.visible')
-      .should('contain',expectedText)
-    },
-    selectRandomSortBy () {
-      selectRandomDropdownValue(dropdownSortBy, dropdownSortBYIMDBRating)
-    },
-    selectSortByIMDBRating () {
-      selectDropdownValue(dropdownSortBYIMDBRating, "IMDb Rating")
-    },
-    verifyMovieAreInDescOrderOfMovieRating () {
-      verifydescendingOrderOfMovieRating(movieRatingIdentifier)
-    },
-    clickRandomTitle () {
-      clickRandomElementByIndex(link_title)
-    },
-
-
-
+      .should('contain', expectedText)
+  },
+  selectSortByIMDBRating () {
+    selectDropdownValue(dropdownSortBYIMDBRating, 'IMDb Rating')
+  },
+  verifyMovieAreInDescOrderOfMovieRating () {
+    verifydescendingOrderOfMovieRating(movieRatingIdentifier)
+  },
 
 }

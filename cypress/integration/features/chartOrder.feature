@@ -1,4 +1,4 @@
-Feature: Test to verify the movies displayed are in correct order 
+Feature: Test to verify the IMDB top charts page displayed are in correct order 
 
 
    Scenario: Sort charts by IMDB rating and verify the movies are in order

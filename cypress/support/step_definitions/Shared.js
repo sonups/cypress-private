@@ -1,6 +1,6 @@
 
 // capture snapshot
-import {Given, When, Then} from "cypress-cucumber-preprocessor/steps"
+import { When, Then } from 'cypress-cucumber-preprocessor/steps'
 
 Then('I capture snapshot and compare {string}', (string) => {
   cy.matchImageSnapshot(string)
@@ -64,15 +64,7 @@ Then('I go to {string}', (string) => {
 Then('I navigate to {string}', (string) => {
   cy.visit(string)
 })
-Then('I reload page {string}', (string) => {
-  cy.reload()
-})
-Then('I go back {string}', (string) => {
-  cy.go('back')
-})
-Then('I go forward {string}', (string) => {
-  cy.go('forward')
-})
+
 Then('I go back to homepage', () => {
   cy.go('back')
 })
@@ -94,7 +86,6 @@ Then('I wait for few secs', () => {
 // logs
 Then('I log {string}', (string) => {
   cy.log(string)
-  console.log(string)
 })
 
 // check URL response status - 200

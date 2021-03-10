@@ -4,16 +4,16 @@ const imdbCharts = '.oneline'
 const topIndiaCharts = '.oneline'
 
 export const rightSidePanelObjects = {
-  verifyYouHaveSeenThisDisplayed() {
+  verifyYouHaveSeenThisDisplayed () {
     cy.get(youHaveSeenThis)
-      .should('contain','You Have Seen')
+      .should('contain', 'You Have Seen')
   },
-  verifyChartsLabelDissplayed() {
+  verifyChartsLabelDissplayed () {
     cy.get(imdbCharts)
-      .should('contain','IMDb Charts')
+      .should('contain', 'IMDb Charts')
   },
-  verifyTopIndiaChartsLabelDIsplayed() {
+  verifyTopIndiaChartsLabelDIsplayed () {
     cy.get(topIndiaCharts)
-      .should('contain','Top India Charts')
-  }
+      .should('contain', 'Top India Charts')
+  },
 }

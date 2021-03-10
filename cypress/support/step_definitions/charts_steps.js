@@ -1,5 +1,5 @@
 import { chartsObjects } from '../../pageobjects/charts_pageobjects'
-import { Given, When, Then } from "cypress-cucumber-preprocessor/steps"
+import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps'
 
 //verifies 250 movies rows are present in charts page
 Then('The imdb charts contains 250 movie titles', () => {
@@ -19,8 +19,8 @@ Then('The imdb charts page contains the centre image', () => {
 Then('The top charts page contains the header labels', () => {
 
   chartsObjects.verifyHeaderLabelTopRatedMovies('Top Rated Movies')
-  chartsObjects.verifyHeaderLabelIMDBCharts( 'IMDb Charts')
-  chartsObjects.verifyHeaderLabelTopRatedByUsersLabel( 'Top 250 as rated by IMDb Users')
+  chartsObjects.verifyHeaderLabelIMDBCharts('IMDb Charts')
+  chartsObjects.verifyHeaderLabelTopRatedByUsersLabel('Top 250 as rated by IMDb Users')
 })
 Given('I open IMDB homepage', () => {
   cy.visit('http://www.imdb.com/chart/top?ref_=nv_mv_250_6')
@@ -36,8 +36,5 @@ When('I select random sortBy IMDB Rating', () => {
 Then('The movies are displayed in descending order of movie rating', () => {
   chartsObjects.verifyMovieAreInDescOrderOfMovieRating()
 })
-
-
-
 
 
