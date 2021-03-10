@@ -61,6 +61,7 @@
 An End to end test automation framework with Cypress. You can build the project using docker. It has some useful reporting features.
 
 Please have a look at other useful scripts inside  **package.json**
+Other useful feautes are:-
  - Allure report generation
  - Running tests in chrome, firefox 
  - Cypress Test Runner [ Useful for test script development]
@@ -85,7 +86,7 @@ Node and npm to be installed in host machine
 
 1. Install docker 
 2. Run build scripts 
-3. Run execute scripts to spin up docker image
+3. Run execute scripts to spin up docker container which executes tests
 4. Run copy scripts to extracts results from docker container
 
 ### Prerequisites
