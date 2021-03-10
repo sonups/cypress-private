@@ -41,7 +41,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
         <ul>
-        <li><a href="#[Optional] To check other features">[Optional] To check other features</a></li>
+        <li><a href="#[optional]-to-check-other-features">[Optional] To check other features</a></li>
       </ul>
       
     </li>
