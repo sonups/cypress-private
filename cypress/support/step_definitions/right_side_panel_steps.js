@@ -1,0 +1,16 @@
+import { rightSidePanelObjects } from '../../pageobjects/right_sidepanelobjects'
+import { chartsObjects } from '../../pageobjects/charts_pageobjects'
+import {Given, When, Then} from "cypress-cucumber-preprocessor/steps"
+
+
+Then('The right side panel contains You Have Seen Label', () => {
+  rightSidePanelObjects.verifyYouHaveSeenThisDisplayed()
+})
+
+Then('The right side panel contains IMDb Charts', () => {
+  rightSidePanelObjects.verifyChartsLabelDissplayed()
+})
+
+Then('The right side panel contains Top India Charts', () => {
+  rightSidePanelObjects.verifyTopIndiaChartsLabelDIsplayed()
+})

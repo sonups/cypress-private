@@ -29,6 +29,7 @@
   "license": "ISC",
   "dependencies": {
     "@bahmutov/print-env": "1.2.0",
+    "@types/lodash": "^4.14.168",
     "@typescript-eslint/eslint-plugin": "^2.24.0",
     "@typescript-eslint/parser": "^2.24.0",
     "allure-commandline": "^2.0.0",
@@ -74,7 +75,10 @@
   },
   "devDependencies": {
     "cypress-multi-reporters": "^1.4.0",
+    "loadash": "^1.0.0",
+    "lodash": "^4.17.21",
     "mocha": "^8.3.1",
-    "mochawesome": "^6.2.2"
+    "mochawesome": "^6.2.2",
+    "underscore": "^1.12.0"
   }
 }
