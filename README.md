@@ -21,7 +21,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/sonups/cypress-test-docker">
-    <img src="https://hackernoon.com/hn-images/1*IrV85j4bpBjZocD5jVnCHQ.jpeg" alt="Logo" width="80" height="80">
+    <img src="https://hackernoon.com/hn-images/1*IrV85j4bpBjZocD5jVnCHQ.jpeg" alt="Logo" width="300" height="150">
   </a>
   <h3 align="center">Cypress Test Automation</h3>
   <p align="center">
